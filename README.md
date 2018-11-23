@@ -1,5 +1,20 @@
 # querying-hierarchical-data
 
+root-category
+  - cat-01
+    - cat-01-a
+    - cat-01-b
+    - cat-01-c
+      - cat-01-c-001
+      - cat-01-c-002
+  - cat-02
+    - cat-02-a
+    - cat-02-b
+    - cat-02-c    
+      - cat-02-c-001
+      - cat-02-c-002
+    
+    
 ```sql
 create table category(
   id long,
