@@ -40,3 +40,14 @@ insert into category values(8, 'cat-02-c', 5);
 insert into category values(80, 'cat-02-c-001', 8);
 insert into category values(81, 'cat-02-c-002', 8);
 ```
+
+*MySQL 8.0 Common Table Expression*
+
+```sql
+with recursive get_children (n) as (
+  select 1
+  union all
+  select n+1 from get_children
+  where n < 10  
+}
+```
