@@ -51,3 +51,20 @@ with recursive get_children (n) as (
   where n < 10  
 }
 ```
+
+
+```sql
+create table category (
+  id long,
+  name varchar(30),
+  parent_id long
+  );
+  
+  insert into category values(1, 'Toys', null);
+  insert into category values(2, 'Clay', 1);
+  insert into category values(3, 'Mechanical', 1);
+  insert into category values(4, 'cookery', 2);
+  insert into category values(5, 'Baking', 2);
+  insert into category values(6, 'Wrench', 3);
+  insert into category values(7, 'Shovel', 3);
+```
